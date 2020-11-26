@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+header {
+    padding: 30px;
+    text-align: left;
+    background: #3f9e91;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: white;
+  }
+
+#myInput {
+    background-image: url('/css/search.png');
+    background-size: 10%;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 12px 25px 12px 40px;
+    margin-left: 113px;
+    margin-bottom: 20px;
+    margin-top: 70px;
+    border: 1px solid #ccc;
+}
+
+#myTable {
+    border-collapse: collapse;
+    width: 85%;
+    height: 80px;
+    margin-top: 25px;
+    margin: auto;
+    align-self: auto;
+    padding: 5px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    font-family: sans-serif;
+    
+}
+
+#myTable th {
+    border: 1px solid #ccc;
+    padding: 22px;
+    font-size: 22px;
+    background-color: #137c70;
+    color: white;
+}
+
+#myTable th:hover {
+    cursor: pointer;
+}
+
+#myTable td {
+    border: 1px solid #ccc;
+    text-align: left;
+    padding: 10px;
+    width: 20%;
+}
+
+#myTable tr {
+    border-bottom: 1px solid #ccc;
+}
+
+#myTable tr.header, #myTable tr:hover {
+    background-color: #f1f1f1;
+}
+
+#myTable tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+#myTable tr:nth-child(even) {
+    background-color: #aed3ce;
+}
+
+.pagination {
+    display: inline-block;
+    margin-left: 900px;
+
+}
+  
+.pagination input {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 0 2px;
+}
+  
+.pagination input.active {
+    background-color: #3f9e91;
+    color: white;
+    float:left;
+}
+  
+.pagination input:hover:not(.active) {
+    background-color: #aed3ce;
+}
+
+.box_options {
+ margin-left: 110px;
+ float: left;
+}
+
+#myBtn {
+    background-color: #3f9e91;
+    color: white;
+    margin-left: 110px;
+    padding: 10px;
+}
+
+.changePage:disabled {
+    display: none;
+}
+
+.dataTables_wrapper .dataTables_filter {
+    background-image: url('search.png');
+    background-size: 10%;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 12px 25px 12px 40px;
+    margin-right: 95px;
+    margin-bottom: 10px;
+    text-align:right;
+}
+.dataTables_wrapper .dataTables_paginate{ 
+    text-align:right;
+    padding-top:0.25em;
+    margin-right: 113px;
+    margin-top: 20px;
+}
+
+.dataTables_length{
+    margin-left: 113px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.dataTables_wrapper .dataTables_info{
+    clear:both;
+    float:left;
+    padding-top:0.755em;
+    margin-left: 113px;
+    margin-top: 15px;
+}

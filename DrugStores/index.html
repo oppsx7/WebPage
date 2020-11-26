@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+        
+        <title></title>
+    </head>
+
+    <body>
+        <header>Регистър на дрогериите в България</header>
+        
+        <table id="myTable">
+            <thead id="headerTable">
+                <tr>
+                    <th>Регистрирал</th>
+                    <th onclick="sort()">Удостоверение</th>
+                    <th>Адрес на седалище</th>
+                    <th>Ръководител</th>
+                    <th>Адрес на дрогерия</th>
+                </tr>
+            </thead>
+        </table>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script> -->
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
