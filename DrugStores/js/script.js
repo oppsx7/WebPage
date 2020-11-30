@@ -19,7 +19,23 @@ for (i = 1; i <rows.length; i++) {
   table +=  rows[i].getElementsByTagName("data")[3].childNodes[0].nodeValue;
   table += "</td><td>";
   table +=  rows[i].getElementsByTagName("data")[4].childNodes[0].nodeValue;
-  table += "</td></tr>";
+  table += "</td>";
+  console.log(rows[i].getElementsByTagName("data").length);
+  if (rows[i].getElementsByTagName("data").length == 6 ){
+    table += "<td>";
+    table +=  rows[i].getElementsByTagName("data")[5].childNodes[0].nodeValue;
+    table += "</td><td></td></tr>";
+  } else if (rows[i].getElementsByTagName("data").length == 7 ){ 
+    table += "<td>";
+    console.log(rows[i].getElementsByTagName("data")[5].)
+    table +=  rows[i].getElementsByTagName("data")[5].childNodes[0].nodeValue;
+    table += "</td><td>";
+    table +=  rows[i].getElementsByTagName("data")[6].childNodes[0].nodeValue;
+    table += "</td></tr>";
+  } else {
+    table += "<td></td><td></td></tr>";
+  }
+  
 }
 document.getElementById("myTable").innerHTML = table;
 
